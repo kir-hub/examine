@@ -20,6 +20,7 @@ import browserHistory from './browserHistory';
 import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatContainer';
 
 import LearnSquadHelp from './pages/LearnSquadHelp/LearnSquadHelp'
+import Events from './pages/Events/Events'
 
 
 class App extends Component {
@@ -38,6 +39,7 @@ class App extends Component {
                     pauseOnHover
                 />
                 <Switch>
+                    <Route exact path='/Events' component={(Events)}/>
                     <Route exact path='/LearnSquadHelp' component={(LearnSquadHelp)}/>
                     <Route exact path='/' component={Home}/>
                     <Route exact path='/login' component={OnlyNotAuthorizedUserHoc(LoginPage)}/>

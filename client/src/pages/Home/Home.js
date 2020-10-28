@@ -37,6 +37,7 @@ const Home = (props) => {
                     <div className={styles.headerBar}>
                         <div className={styles.headline}>
                             <span>Find the Perfect Name for</span>
+                            
                             <span className={styleName}>{text}</span>
                         </div>
                         <p>Launch a naming contest to engage hundreds of naming

@@ -38,7 +38,7 @@ router.post(
   userController.payment,
 );
 
-router.post(
+router.get(
   '/getCustomersContests',
   checkToken.checkToken,
   contestController.getCustomersContests,
@@ -58,7 +58,7 @@ router.post(
   contestController.getContests,
 );
 
-router.post(
+router.get(
   '/getUser',
   checkToken.checkAuth,
 );
